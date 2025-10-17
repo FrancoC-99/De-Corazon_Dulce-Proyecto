@@ -120,23 +120,23 @@
     <section class="pedido-container my-5" id="pedido">
         <h2 class="text-center mb-4">Realizá tu pedido</h2>
 
-        <form class="pedido-form">
+        <form class="pedido-form" id="formulario-pedido">
             <div class="row g-3 align-items-center">
                 <div class="col-md-3">
-                    <input type="text" class="form-control" placeholder="Nombre y apellido">
+                    <input type="text" class="form-control" placeholder="Nombre y apellido" id="nombre" name="nombre">
                 </div>
                 <div class="col-md-3">
-                    <input type="text" class="form-control" placeholder="Teléfono">
+                    <input type="text" class="form-control" placeholder="Teléfono" id="telf" name="telf">
                 </div>
                 <div class="col-md-3">
-                    <input type="text" class="form-control" placeholder="Producto">
+                    <input type="text" class="form-control" placeholder="Producto" id="producto" name="producto">
                 </div>
                 <div class="col-md-2 d-flex caja-cantidad">
                     <label for="cantidad" class="form-label">Cantidad:</label>
                     <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" max="100" value="1">
                 </div>
                 <div class="col-md-10">
-                    <input type="text" class="form-control" placeholder="Comentarios">
+                    <input type="text" class="form-control" placeholder="Comentarios" id="comentarios" name="comentarios" maxlength="349">
                 </div>
                 <div class="col-md-1 d-grid">
                     <button type="submit" class="btn btn-pedido">Enviar</button>
@@ -166,8 +166,8 @@
       </p>
 </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="Javascript/javascript.js"></script>
 </body>
-
 </html>
